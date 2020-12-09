@@ -19,6 +19,7 @@
 	git log 	#Git history
 	git checkout file_name	#Recover the latest version of file to local (lost local history though!)
 	"Fork" button online: create a copy of repos to my own GitHub account
+	git push --set-upstream origin master
 	
 	
 

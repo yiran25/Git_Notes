@@ -1,0 +1,128 @@
+# 1. CLONE REPOS TO LOCAL COMPUTER: this allows you to grab all contents from a git repos, modify them, and upload them if you have access
+	copy/paste the link under Code button on the web repos that you want to download
+	git clone web_link
+
+# 2. GIT PULL: this allows you to pull the newest version of a git repos online to your local git folder which may be out-of-date/lacking files
+	git pull
+
+# 3. CREATE A NEW BRANCH: a branch is like a copy of your repos, so that you can modify the branch without changing ur master repos
+	git branch new_branch
+	git branch	#See how many branches you have
+	git add/commit/push the new branch online
+	git checkout new_branch		#Switch the current branch to another branch
+
+# 4. MERGE DIFFERENT BRANCHES:
+	Option1: git merge new_branch
+	Option2: go online & do a pull requests to merge branches
+
+# 5. OTHER USEFUL COMMANDS:
+	git log 	#Git history
+	git checkout file_name	#Recover the latest version of file to local (lost local history though!)
+	"Fork" button online: create a copy of repos to my own GitHub account
+	
+	
+
+
+
+
+
+    1  sudo jamf recon
+    2  su support
+    3  sudo chown -Rf hey2 /Users/hey2/Dropbox\ \(The\ Francis\ Crick\) 
+    4  git init
+    5  git init
+    6  ls .git/
+    7  git remote
+    8  git remote add origin https://github.com/yiran25/my_first_repos.git
+    9  git push -u origin master
+   10  open /Users/hey2/.git/
+   11  cd /Users/hey2/Desktop/
+   12  mkdir Git/
+   13  cd Git/
+   14  touch my_first_gitfile.py
+   15  pwd
+   16  git init
+   17  ls
+   18  ls -a
+   19  git status
+   20  git add my_first_gitfile.py 
+   21  git commit
+   22  git status
+   23  git commit my_first_gitfile.py 
+   24  git remote
+   25  git remote add origin https://github.com/yiran25/my_first_repos.git
+   26  git push -u origin master
+   27  git config --global username "Yiran He"
+   28  git config --global user.name "Yiran He"
+   29  git config --global user.email "yiran.he@crick.ac.uk"
+   30  git status
+   31  export EDITOR=/usr/bin/nano
+   32  pwd
+   33  ls
+   34  git pull 
+   35  git pull origin master
+   36  clear
+   37  ssh hey2@login.camp.thecrick.org
+   38  cd /Users/hey2/Desktop/
+   39  mkdir Git/
+   40  cd Git/
+   41  git clone https://github.com/yiran25/my_first_repos.git
+   42  ls
+   43  cd my_first_repos/
+   44  ls
+   45  git remote -v
+   46  touch ReadMe.md
+   47  open ReadMe.md 
+   48  git status
+   49  git add ReadMe.md 
+   50  git status
+   51  git commit -m "Create a readme file"
+   52  git push 
+   53  git remote -v
+   54  cd..
+   55  cd old_folder_tosync/
+   56  git status
+   57  git add old_file.md 
+   58  git commit
+   59  git commit -m "add an old file"
+   60  git push
+   61  git pull
+   62  pwd
+   63  cd /Users/hey2/Desktop/Git/
+   64  mkdir another_folder/
+   65  cd another_folder/
+   66  git init
+   67  cd..
+   68  ..
+   69  cd ..
+   70  cd my_first_repos/old_folder_tosync/
+   71  git pull
+   72  git status
+   73  git log
+   74  git checkout old_file.md
+   75  cd ..
+   76  history > 002.git_clone/git_pull.txthistory > 002.git_clone/git_pull.txt
+   77  history > 002.gitClone_gitPull.txt
+   78  git branch
+   79  git branch new_branch
+   80  git branch
+   81  git push
+   82  git branch
+   83  git checkout new_branch
+   84  git branch
+   85  ls
+   86  ls -a
+   87  git status
+   88  git add ReadMe.md 
+   89  git commit -m "Add warning in readme"
+   90  git status
+   91  git push origin new_branch
+   92  git checkout master
+   93  history > 002.gitClone_gitPull_branch.txt
+   94  git branch
+   95  $git merge new_branch
+   96  $go online and do a pull request to merge branches
+   97  history > 002.gitClone_gitPull_Branches.txt
+
+
+Fork online: create a copy on my own GitHub account

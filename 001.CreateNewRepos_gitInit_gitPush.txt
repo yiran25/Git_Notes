@@ -1,11 +1,11 @@
 # 1. PUSH FILE TO GIT
-	git add
-	git commit
-	git push -m "message"
+	git add file_name
+	git commit -m "message"   (this is the buffer for all changes)
+	git push origin(local_name_of_repos) master(branch_name)
 
 # 2. CREATE A NEW REPOS
 	create a new repos on the git website
-	git remote add origin(name of repos) web_address_of_repos
+	git remote add origin(local_name_of_repos) web_address_of_repos
 
 # 3. Gitify a folder 
 	create a folder & navigate (cd) with the terminal

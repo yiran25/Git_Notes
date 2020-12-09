@@ -2,7 +2,7 @@
 	copy/paste the link under Code button on the web repos that you want to download
 	git clone web_link
 
-# 2. GIT PULL: this allows you to pull the newest version of a git repos online to your local git folder which may be out-of-date/lacking files
+# 2. GIT PULL: this allows you to pull the newest version of a git repos online to your local git folder which may be out-of-date/lacking files. You may need to pull first before pushing files from your out-of-date folder.
 	git pull
 
 # 3. CREATE A NEW BRANCH: a branch is like a copy of your repos, so that you can modify the branch without changing ur master repos

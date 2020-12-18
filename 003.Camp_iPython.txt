@@ -1,0 +1,52 @@
+1. LOGIN/LOGOUT:
+$ ssh username@login.camp.thecrick.org
+$ exit
+
+2. RUN GIT ON CAMP
+# Start accessing a camp computer
+$ srun --ntasks=1 --cpus-per-task=1 --partition=int --time=8:00:0 --mem=4G --pty bash
+
+[hey2@int001 ~]$ pwd
+/camp/home/hey2
+
+[hey2@int001 ~]$ git clone https://github.com/yiran25/my_first_repos.git
+Cloning into 'my_first_repos'...
+
+3. RUN IPYTHON ON CAMP
+1) Create a mini environment
+[hey2@int001 my_first_repos]$ ls /camp/lab/znamenskiyp/home/users/hey2/
+[hey2@int001 ~]$ ln -s /camp/lab/znamenskiyp/home/users/hey2/conda .conda
+[hey2@int001 ~]$ ls -al
+
+[hey2@int001 ~]$ ml Anaconda3  # import module
+[hey2@int001 ~]$ conda init
+Log out
+Log back in again
+(base) [hey2@int000 ~]$ conda
+(base) [hey2@int000 ~]$ conda create -n my_first_repos jupyter  # Create a mini Jupiter environment within the destination folder
+
+2) Activate/deactivate the python mini environment
+#
+# To activate this environment, use
+#
+#     $ conda activate my_first_repos
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+(base) [hey2@int000 ~]$ conda activate my_first_repos
+
+3) Open ipython 
+(my_first_repos) [hey2@int000 ~]$ ipython
+
+In [1]: conda install pandas  # Install a package 
+
+In [2]: import pandas
+
+$ conda deactivate
+
+4) Open a jupiter notebook 
+[hey2@int000 ~]$ jupyter-notebook --ip=$(hostname -I | grep -o -E "10\.28\.[0-7]\.[0-9]{1,3}') --port=8080 &
+
+exit

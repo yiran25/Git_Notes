@@ -1,1 +1,1 @@
-This is the study notes for Git @Antonin
+This is the study notes for Git @ablot
